@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;  
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+@layer components {
+
+
+  .btn {
+    @apply   bg-pink hover:bg-lightPink text-white font-bold md:text-[22px] w-[250px] h-[50px] md:w-[400px] md:h-[80px] rounded-[100px] border-0 border-red-500 outline-none [box-shadow:0px_4px_10px_0px_gray]
+
+  }
+  .btn-footer {
+    @apply  bg-pink hover:bg-lightPink text-white w-[130px] h-[50px] text-[14px] rounded-lg font-bold
+ 
+  }
+  .btn-nav {
+    @apply   cursor-pointer text-pink border-[1px] rounded-3xl border-lightPink hover:border-pink w-[120px] md:w-[140px] py-[6px]
+  }
+
+  .new-container {
+     @apply max-w-[1440px] mx-auto 
+  }
+
+  .articles{
+    @apply  px-[30px] md:px-[80px] md:py-[0px] py-[0px] gap-[20px]  flex flex-col md:flex-row-reverse new-container items-center
+  }
+
+  .articles-h1{
+    @apply font-bold text-[24px] md:text-[40px] mt-[50px] md:mt-[0px] text-veryDarkCyan 
+  }
+  .articles-p{
+    @apply text-veryDarkCyan text-[14px] md:text-[18px] font-semibold  mt-[20px] md:mt-[20px]
+  }
+
+  .article-box{
+    @apply flex  flex-col md:justify-center  md:w-[600px] md:ps-[100px]  /* md:px-[50px] md:pt-[100px] */
+
+  }
+}
+
